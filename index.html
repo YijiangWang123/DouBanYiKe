@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>老王一刻</title>
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./public/css/main.css">
 </head>
 <body ng-app="YiKe">
@@ -19,12 +19,12 @@
 					<span>登录</span>
 				</dt>
 				<dd class="active">
-					<a href="#/today" class="icon-home">
+					<a href="#today" class="icon-home">
 						<span>今日一刻</span>
 					</a>
 				</dd>
 				<dd>
-					<a href="./views/older.html" class="icon-file-empty">
+					<a href="#/older" class="icon-file-empty">
 						<span>往期内容</span>
 					</a>
 				</dd>
@@ -62,8 +62,9 @@
 				<a href="javascript:;" class="search icon-search"></a>
 			</div>
 			<!-- 主体 -->
-			<div class="body">
+			<div ng-class="{body:false}">
 				<!--占位符-->
+				<div ng-view=""></div>
 			</div>
 		</div>
 	</div>

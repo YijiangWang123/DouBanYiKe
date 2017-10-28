@@ -5,8 +5,11 @@ var Yike = angular.module("YiKe",["ngRoute","Controllers"]);
 
 //配置路由
 Yike.config(['$routeProvider',function ($routeProvider) {
-    $routeProvider.when("/today",{
-        templateUrl:"../views/today.html"
+    $routeProvider.when("/",{
+        template:"<h2>hahaha</h2>"
+    }).when("/today",{
+        templateUrl:"./views/today.html",
+        controller:"TodayController"
     }).when("/older",{
         templateUrl:'views/older.html',
         controller:'OlderController'

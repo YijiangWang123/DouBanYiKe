@@ -6,4 +6,6 @@
 angular.module("Controllers",[])
 .controller("DemoController",["$scope",function ($scope) {
     console.log("启动了");
+}]).controller("TodayController",["$scope",function ($scope) {
+    console.log("今天");
 }]);
